@@ -1,0 +1,257 @@
+[
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.7
+            ]
+        ],
+        "infectivity_threshold": 0.75,
+        "expected": false,
+        "purpose": "City with one susceptible person with an immunity level below the infectivity threshold."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "infectivity_threshold": 0.6,
+        "expected": true,
+        "purpose": "City with one susceptible person with an immunity level equal to the infectivity threshold."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.7
+            ]
+        ],
+        "infectivity_threshold": 0.6,
+        "expected": true,
+        "purpose": "City with one susceptible person with an immunity level above the infectivity threshold."
+    },
+    {
+        "city": [
+            [
+                "R",
+                5,
+                0.7
+            ]
+        ],
+        "infectivity_threshold": 0.75,
+        "expected": false,
+        "purpose": "City with one recovered person with an immunity level below the infectivity threshold."
+    },
+    {
+        "city": [
+            [
+                "I",
+                5,
+                0.7
+            ]
+        ],
+        "infectivity_threshold": 0.5,
+        "expected": true,
+        "purpose": "City with one infected person with an adjusted immunity level above the infectivity threshold."
+    },
+    {
+        "city": [
+            [
+                "I",
+                5,
+                0.2
+            ]
+        ],
+        "infectivity_threshold": 0.5,
+        "expected": false,
+        "purpose": "City with one infected person with an adjusted immunity level below the infectivity threshold."
+    },
+    {
+        "city": [
+            [
+                "I",
+                5,
+                0.4
+            ]
+        ],
+        "infectivity_threshold": 0.5,
+        "expected": true,
+        "purpose": "City with one infected person with an immunity level below the infectivity threshold and an adjusted immunity level above the threshold"
+    },
+    {
+        "city": [
+            [
+                "S",
+                5,
+                0.4
+            ],
+            [
+                "S",
+                6,
+                1.0
+            ],
+            [
+                "S",
+                5,
+                0.2
+            ],
+            [
+                "R",
+                2,
+                0.5
+            ],
+            [
+                "I",
+                0,
+                0.2
+            ],
+            [
+                "S",
+                3,
+                0.6
+            ],
+            [
+                "S",
+                1,
+                0.8
+            ],
+            [
+                "R",
+                4,
+                0.8
+            ],
+            [
+                "S",
+                7,
+                0.6
+            ],
+            [
+                "R",
+                3,
+                0.6
+            ]
+        ],
+        "infectivity_threshold": 0.75,
+        "expected": false,
+        "purpose": "City with 10 people. Infectivity threshold high enough to prevent herd immunity."
+    },
+    {
+        "city": [
+            [
+                "S",
+                5,
+                0.4
+            ],
+            [
+                "S",
+                6,
+                1.0
+            ],
+            [
+                "S",
+                5,
+                0.2
+            ],
+            [
+                "R",
+                2,
+                0.5
+            ],
+            [
+                "I",
+                0,
+                0.2
+            ],
+            [
+                "S",
+                3,
+                0.6
+            ],
+            [
+                "S",
+                1,
+                0.8
+            ],
+            [
+                "R",
+                4,
+                0.8
+            ],
+            [
+                "S",
+                7,
+                0.6
+            ],
+            [
+                "R",
+                3,
+                0.6
+            ]
+        ],
+        "infectivity_threshold": 0.1,
+        "expected": true,
+        "purpose": "City with 10 people. Infectivity threshold low enough to allow herd immunity."
+    },
+    {
+        "city": [
+            [
+                "S",
+                5,
+                0.4
+            ],
+            [
+                "S",
+                6,
+                1.0
+            ],
+            [
+                "S",
+                5,
+                0.2
+            ],
+            [
+                "R",
+                2,
+                0.5
+            ],
+            [
+                "I",
+                0,
+                0.2
+            ],
+            [
+                "S",
+                3,
+                0.6
+            ],
+            [
+                "S",
+                1,
+                0.8
+            ],
+            [
+                "R",
+                4,
+                0.8
+            ],
+            [
+                "S",
+                7,
+                0.6
+            ],
+            [
+                "R",
+                3,
+                0.6
+            ]
+        ],
+        "infectivity_threshold": 0.3,
+        "expected": true,
+        "purpose": "City with 10 people. Infectivity threshold low enough to allow herd immunity. Requires correct handling of infected people."
+    }
+]

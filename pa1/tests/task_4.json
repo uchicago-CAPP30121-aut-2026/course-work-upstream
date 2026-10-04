@@ -1,0 +1,380 @@
+[
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.25
+            ],
+            [
+                "I",
+                1,
+                0.5
+            ],
+            [
+                "R",
+                3,
+                0.5
+            ],
+            [
+                "R",
+                4,
+                0.5
+            ],
+            [
+                "S",
+                4,
+                0.75
+            ],
+            [
+                "I",
+                2,
+                0.45
+            ]
+        ],
+        "infectivity_threshold": 0.5,
+        "max_days": 1,
+        "expected": [
+            [
+                [
+                    "I",
+                    0,
+                    0.25
+                ],
+                [
+                    "I",
+                    2,
+                    0.5
+                ],
+                [
+                    "R",
+                    4,
+                    0.5
+                ],
+                [
+                    "S",
+                    0,
+                    0.5
+                ],
+                [
+                    "S",
+                    5,
+                    0.75
+                ],
+                [
+                    "R",
+                    0,
+                    0.6
+                ]
+            ],
+            1
+        ],
+        "purpose": "First example from assignment writeup for Task 4 ."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.25
+            ],
+            [
+                "I",
+                1,
+                0.5
+            ],
+            [
+                "R",
+                3,
+                0.5
+            ],
+            [
+                "R",
+                4,
+                0.5
+            ],
+            [
+                "S",
+                4,
+                0.75
+            ],
+            [
+                "I",
+                2,
+                0.45
+            ]
+        ],
+        "infectivity_threshold": 0.5,
+        "max_days": 5,
+        "expected": [
+            [
+                [
+                    "R",
+                    1,
+                    0.4
+                ],
+                [
+                    "R",
+                    3,
+                    0.65
+                ],
+                [
+                    "S",
+                    3,
+                    0.5
+                ],
+                [
+                    "S",
+                    4,
+                    0.5
+                ],
+                [
+                    "S",
+                    9,
+                    0.75
+                ],
+                [
+                    "R",
+                    4,
+                    0.6
+                ]
+            ],
+            5
+        ],
+        "purpose": "Second example from assignment writeup for Task 4."
+    },
+    {
+        "city": [
+            [
+                "I",
+                0,
+                0.25
+            ]
+        ],
+        "infectivity_threshold": 0.75,
+        "max_days": 10,
+        "expected": [
+            [
+                [
+                    "S",
+                    2,
+                    0.4
+                ]
+            ],
+            10
+        ],
+        "purpose": "Third example from assignment writeup for Task 4."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.25
+            ]
+        ],
+        "infectivity_threshold": 0.5,
+        "max_days": 5,
+        "expected": [
+            [
+                [
+                    "S",
+                    5,
+                    0.25
+                ]
+            ],
+            5
+        ],
+        "purpose": "City with one susceptible person."
+    },
+    {
+        "city": [
+            [
+                "R",
+                0,
+                0.25
+            ]
+        ],
+        "infectivity_threshold": 0.5,
+        "max_days": 10,
+        "expected": [
+            [
+                [
+                    "S",
+                    5,
+                    0.25
+                ]
+            ],
+            10
+        ],
+        "purpose": "City with one recovered person."
+    },
+    {
+        "city_params": [
+            140003,
+            5,
+            30,
+            20,
+            3
+        ],
+        "infectivity_threshold": 0.6,
+        "max_days": 1,
+        "expected": [
+            [
+                [
+                    "R",
+                    3,
+                    0.6666666666666666
+                ],
+                [
+                    "I",
+                    2,
+                    0.6666666666666666
+                ],
+                [
+                    "R",
+                    0,
+                    0.8166666666666667
+                ],
+                [
+                    "I",
+                    0,
+                    0.3333333333333333
+                ],
+                [
+                    "R",
+                    4,
+                    0.3333333333333333
+                ]
+            ],
+            1
+        ],
+        "purpose": "Randomly generated city #1 for one day."
+    },
+    {
+        "city_params": [
+            140003,
+            5,
+            30,
+            20,
+            3
+        ],
+        "infectivity_threshold": 0.6,
+        "max_days": 10,
+        "expected": [
+            [
+                [
+                    "S",
+                    7,
+                    0.6666666666666666
+                ],
+                [
+                    "S",
+                    3,
+                    0.8166666666666667
+                ],
+                [
+                    "S",
+                    4,
+                    0.8166666666666667
+                ],
+                [
+                    "S",
+                    1,
+                    0.4833333333333333
+                ],
+                [
+                    "R",
+                    4,
+                    0.4833333333333333
+                ]
+            ],
+            10
+        ],
+        "purpose": "Randomly generated city #1 for 10 days."
+    },
+    {
+        "city_params": [
+            140004,
+            5,
+            30,
+            20,
+            3
+        ],
+        "infectivity_threshold": 0.67,
+        "max_days": 1,
+        "expected": [
+            [
+                [
+                    "I",
+                    1,
+                    0.6666666666666666
+                ],
+                [
+                    "I",
+                    0,
+                    0.6666666666666666
+                ],
+                [
+                    "R",
+                    0,
+                    0.4833333333333333
+                ],
+                [
+                    "I",
+                    0,
+                    0.6666666666666666
+                ],
+                [
+                    "R",
+                    3,
+                    0.3333333333333333
+                ]
+            ],
+            1
+        ],
+        "purpose": "Randomly generated city #2 for 1 day."
+    },
+    {
+        "city_params": [
+            140004,
+            5,
+            30,
+            20,
+            3
+        ],
+        "infectivity_threshold": 0.67,
+        "max_days": 5,
+        "expected": [
+            [
+                [
+                    "R",
+                    2,
+                    0.8166666666666667
+                ],
+                [
+                    "R",
+                    1,
+                    0.8166666666666667
+                ],
+                [
+                    "R",
+                    4,
+                    0.4833333333333333
+                ],
+                [
+                    "R",
+                    1,
+                    0.8166666666666667
+                ],
+                [
+                    "I",
+                    1,
+                    0.3333333333333333
+                ]
+            ],
+            5
+        ],
+        "purpose": "Randomly generated city #2 for five days.\nThe person in Location 4 becomes susceptible in time to get infected."
+    }
+]

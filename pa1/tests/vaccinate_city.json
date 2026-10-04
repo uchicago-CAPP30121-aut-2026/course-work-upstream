@@ -1,0 +1,220 @@
+[
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ]
+        ],
+        "vax_info": [
+            0.6,
+            0.15
+        ],
+        "expected": [
+            [
+                "S",
+                0,
+                0.65
+            ]
+        ],
+        "purpose": "City with one susceptible person with an immunity level below the vaccination threshold."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.55
+            ]
+        ],
+        "vax_info": [
+            0.6,
+            0.5
+        ],
+        "expected": [
+            [
+                "S",
+                0,
+                1.0
+            ]
+        ],
+        "purpose": "City with one susceptible person with an immunity level below the vaccination threshold.  The person's updated immunity level must be clamped to 1.0"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "vax_info": [
+            0.6,
+            0.15
+        ],
+        "expected": [
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "purpose": "City with one susceptible person with an immunity level equal to the vaccination threshold."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.7
+            ]
+        ],
+        "vax_info": [
+            0.6,
+            0.15
+        ],
+        "expected": [
+            [
+                "S",
+                0,
+                0.7
+            ]
+        ],
+        "purpose": "City with one susceptible person with an immunity level above the vaccination threshold."
+    },
+    {
+        "city": [
+            [
+                "R",
+                1,
+                0.5
+            ]
+        ],
+        "vax_info": [
+            0.75,
+            0.2
+        ],
+        "expected": [
+            [
+                "R",
+                1,
+                0.5
+            ]
+        ],
+        "purpose": "City with one recovered person."
+    },
+    {
+        "city": [
+            [
+                "I",
+                1,
+                0.5
+            ]
+        ],
+        "vax_info": [
+            0.75,
+            0.2
+        ],
+        "expected": [
+            [
+                "I",
+                1,
+                0.5
+            ]
+        ],
+        "purpose": "City with one infected person"
+    },
+    {
+        "city": [
+            [
+                "S",
+                1,
+                0.6
+            ],
+            [
+                "S",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                3,
+                0.85
+            ],
+            [
+                "S",
+                4,
+                0.25
+            ]
+        ],
+        "vax_info": [
+            0.8,
+            0.3
+        ],
+        "expected": [
+            [
+                "S",
+                1,
+                0.8999999999999999
+            ],
+            [
+                "S",
+                2,
+                1.0
+            ],
+            [
+                "S",
+                3,
+                0.85
+            ],
+            [
+                "S",
+                4,
+                0.55
+            ]
+        ],
+        "purpose": "City with four susceptible people."
+    },
+    {
+        "city_params": [
+            140003,
+            5,
+            30,
+            20,
+            3
+        ],
+        "vax_info": [
+            0.5,
+            0.25
+        ],
+        "expected": [
+            [
+                "R",
+                2,
+                0.6666666666666666
+            ],
+            [
+                "I",
+                1,
+                0.6666666666666666
+            ],
+            [
+                "I",
+                2,
+                0.6666666666666666
+            ],
+            [
+                "S",
+                8,
+                0.5833333333333333
+            ],
+            [
+                "R",
+                3,
+                0.3333333333333333
+            ]
+        ],
+        "purpose": "Randomly generated city #1 with vaccination threshold of 0.5 and a vaccine boost of 0.25"
+    }
+]

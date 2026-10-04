@@ -1,0 +1,494 @@
+[
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "expected": false,
+        "purpose": "Location 3 in the specified city has a suspectible left neighbor and a suspectible right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                3,
+                0.8
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "expected": false,
+        "purpose": "Location 3 in the specified city has a recovered left neighbor and a suspectible right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "expected": true,
+        "purpose": "Location 3 in the specified city has an infected left neighbor and a suspectible right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                1,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "expected": false,
+        "purpose": "Location 3 in the specified city has a suspectible left neighbor and a recovered right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "expected": true,
+        "purpose": "Location 3 in the specified city has a suspectible left neighbor and an infected right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 0,
+        "expected": false,
+        "purpose": "Location 0 in the specified city has no left neighbor and a suspectible right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                1,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 0,
+        "expected": false,
+        "purpose": "Location 0 in the specified city has no left neighbor and a recovered right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 0,
+        "expected": true,
+        "purpose": "Location 0 in the specified city has no left neighbor and an infected right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 4,
+        "expected": false,
+        "purpose": "Location 4 in the specified city has a suspectible left neighbor and no right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "R",
+                3,
+                0.8
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 4,
+        "expected": false,
+        "purpose": "Location 4 in the specified city has a recovered left neighbor and no right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 4,
+        "expected": true,
+        "purpose": "Location 4 in the specified city has an infected left neighbor and no right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "expected": true,
+        "purpose": "Location 2 in the specified city has an infected left neighbor and an infected right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "R",
+                2,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "expected": false,
+        "purpose": "Location 2 in the specified city has a recovered left neighbor and a recovered right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "R",
+                2,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "expected": true,
+        "purpose": "Location 2 in the specified city has an infected left neighbor and a recovered right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                2,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "expected": true,
+        "purpose": "Location 2 in the specified city has a recovered left neighbor and an infected right neighbor"
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ]
+        ],
+        "location": 0,
+        "expected": false,
+        "purpose": "Location 0 in the specified city has no left neighbor and no right neighbor."
+    }
+]

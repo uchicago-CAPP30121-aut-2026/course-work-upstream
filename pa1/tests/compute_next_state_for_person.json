@@ -1,0 +1,1177 @@
+[
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "infectivity_threshold": 0.9,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 3 contains a susceptible person with an immunity level less than the threshold. They have a suspectible left neighbor and a suspectible right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                3,
+                0.8
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "infectivity_threshold": 0.9,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 3 contains a susceptible person with an immunity level less than the threshold. They have a recovered left neighbor and a suspectible right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "infectivity_threshold": 0.9,
+        "expected": [
+            "I",
+            0,
+            0.5
+        ],
+        "purpose": "Location 3 contains a susceptible person with an immunity level less than the threshold. They have an infected left neighbor and a suspectible right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "infectivity_threshold": 0.09999999999999998,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 3 contains a susceptible person with an immunity level greater than the threshold. They have an infected left neighbor and a suspectible right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "infectivity_threshold": 0.5,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 3 contains a susceptible person with an immunity level equal to the threshold. They have an infected left neighbor and a suspectible right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                1,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "infectivity_threshold": 0.9,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 3 contains a susceptible person with an immunity level less than the threshold. They have a suspectible left neighbor and a recovered right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "infectivity_threshold": 0.9,
+        "expected": [
+            "I",
+            0,
+            0.5
+        ],
+        "purpose": "Location 3 contains a susceptible person with an immunity level less than the threshold. They have a suspectible left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "infectivity_threshold": 0.09999999999999998,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 3 contains a susceptible person with an immunity level greater than the threshold. They have a suspectible left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.6
+            ]
+        ],
+        "location": 3,
+        "infectivity_threshold": 0.5,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 3 contains a susceptible person with an immunity level equal to the threshold. They have a suspectible left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 0,
+        "infectivity_threshold": 0.9,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 0 contains a susceptible person with an immunity level less than the threshold. They have no left neighbor and a suspectible right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                1,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 0,
+        "infectivity_threshold": 0.9,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 0 contains a susceptible person with an immunity level less than the threshold. They have no left neighbor and a recovered right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 0,
+        "infectivity_threshold": 0.9,
+        "expected": [
+            "I",
+            0,
+            0.5
+        ],
+        "purpose": "Location 0 contains a susceptible person with an immunity level less than the threshold. They have no left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 0,
+        "infectivity_threshold": 0.09999999999999998,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 0 contains a susceptible person with an immunity level greater than the threshold. They have no left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 0,
+        "infectivity_threshold": 0.5,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 0 contains a susceptible person with an immunity level equal to the threshold. They have no left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 4,
+        "infectivity_threshold": 1.0,
+        "expected": [
+            "S",
+            1,
+            0.6
+        ],
+        "purpose": "Location 4 contains a susceptible person with an immunity level less than the threshold. They have a suspectible left neighbor and no right neighbor.."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "R",
+                3,
+                0.8
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 4,
+        "infectivity_threshold": 1.0,
+        "expected": [
+            "S",
+            1,
+            0.6
+        ],
+        "purpose": "Location 4 contains a susceptible person with an immunity level less than the threshold. They have a recovered left neighbor and no right neighbor.."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 4,
+        "infectivity_threshold": 1.0,
+        "expected": [
+            "I",
+            0,
+            0.6
+        ],
+        "purpose": "Location 4 contains a susceptible person with an immunity level less than the threshold. They have an infected left neighbor and no right neighbor.."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 4,
+        "infectivity_threshold": 0.19999999999999996,
+        "expected": [
+            "S",
+            1,
+            0.6
+        ],
+        "purpose": "Location 4 contains a susceptible person with an immunity level greater than the threshold. They have an infected left neighbor and no right neighbor.."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 4,
+        "infectivity_threshold": 0.6,
+        "expected": [
+            "S",
+            1,
+            0.6
+        ],
+        "purpose": "Location 4 contains a susceptible person with an immunity level equal to the threshold. They have an infected left neighbor and no right neighbor.."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "infectivity_threshold": 1.0,
+        "expected": [
+            "I",
+            0,
+            0.75
+        ],
+        "purpose": "Location 2 contains a susceptible person with an immunity level less than the threshold. They have an infected left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "infectivity_threshold": 0.35,
+        "expected": [
+            "S",
+            1,
+            0.75
+        ],
+        "purpose": "Location 2 contains a susceptible person with an immunity level greater than the threshold. They have an infected left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                1,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                0,
+                0.5
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "infectivity_threshold": 0.75,
+        "expected": [
+            "S",
+            1,
+            0.75
+        ],
+        "purpose": "Location 2 contains a susceptible person with an immunity level equal to the threshold. They have an infected left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "R",
+                2,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "infectivity_threshold": 1.0,
+        "expected": [
+            "S",
+            1,
+            0.75
+        ],
+        "purpose": "Location 2 contains a susceptible person with an immunity level less than the threshold. They have a recovered left neighbor and a recovered right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "R",
+                2,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "infectivity_threshold": 1.0,
+        "expected": [
+            "I",
+            0,
+            0.75
+        ],
+        "purpose": "Location 2 contains a susceptible person with an immunity level less than the threshold. They have an infected left neighbor and a recovered right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "R",
+                2,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "infectivity_threshold": 0.35,
+        "expected": [
+            "S",
+            1,
+            0.75
+        ],
+        "purpose": "Location 2 contains a susceptible person with an immunity level greater than the threshold. They have an infected left neighbor and a recovered right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "I",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "R",
+                2,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "infectivity_threshold": 0.75,
+        "expected": [
+            "S",
+            1,
+            0.75
+        ],
+        "purpose": "Location 2 contains a susceptible person with an immunity level equal to the threshold. They have an infected left neighbor and a recovered right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                2,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "infectivity_threshold": 1.0,
+        "expected": [
+            "I",
+            0,
+            0.75
+        ],
+        "purpose": "Location 2 contains a susceptible person with an immunity level less than the threshold. They have a recovered left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                2,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "infectivity_threshold": 0.35,
+        "expected": [
+            "S",
+            1,
+            0.75
+        ],
+        "purpose": "Location 2 contains a susceptible person with an immunity level greater than the threshold. They have a recovered left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ],
+            [
+                "R",
+                2,
+                0.75
+            ],
+            [
+                "S",
+                0,
+                0.75
+            ],
+            [
+                "I",
+                2,
+                0.6
+            ],
+            [
+                "S",
+                0,
+                0.6
+            ]
+        ],
+        "location": 2,
+        "infectivity_threshold": 0.75,
+        "expected": [
+            "S",
+            1,
+            0.75
+        ],
+        "purpose": "Location 2 contains a susceptible person with an immunity level equal to the threshold. They have a recovered left neighbor and an infected right neighbor."
+    },
+    {
+        "city": [
+            [
+                "S",
+                0,
+                0.5
+            ]
+        ],
+        "location": 0,
+        "infectivity_threshold": 0.9,
+        "expected": [
+            "S",
+            1,
+            0.5
+        ],
+        "purpose": "Location 0 contains a susceptible person with an immunity level less than the threshold. They have no left neighbor and no right neighbor.."
+    },
+    {
+        "city": [
+            [
+                "I",
+                1,
+                0.5
+            ]
+        ],
+        "location": 0,
+        "infectivity_threshold": 0.5,
+        "expected": [
+            "I",
+            2,
+            0.5
+        ],
+        "purpose": "Location 0 contains an infected person."
+    },
+    {
+        "city": [
+            [
+                "I",
+                2,
+                0.5
+            ]
+        ],
+        "location": 0,
+        "infectivity_threshold": 0.5,
+        "expected": [
+            "R",
+            0,
+            0.65
+        ],
+        "purpose": "Location 0 contains an infected person who is about to transition to being recovered.."
+    },
+    {
+        "city": [
+            [
+                "I",
+                2,
+                0.95
+            ]
+        ],
+        "location": 0,
+        "infectivity_threshold": 0.95,
+        "expected": [
+            "R",
+            0,
+            1.0
+        ],
+        "purpose": "Location 0 contains an infected person who is about to transition to being recovered. The person's updated immunity level will need to be clamped to 1.0."
+    },
+    {
+        "city": [
+            [
+                "R",
+                3,
+                0.5
+            ]
+        ],
+        "location": 0,
+        "infectivity_threshold": 0.5,
+        "expected": [
+            "R",
+            4,
+            0.5
+        ],
+        "purpose": "Location 0 contains a recovered person."
+    },
+    {
+        "city": [
+            [
+                "R",
+                4,
+                0.5
+            ]
+        ],
+        "location": 0,
+        "infectivity_threshold": 0.5,
+        "expected": [
+            "S",
+            0,
+            0.5
+        ],
+        "purpose": "Location 0 contains a recovered person who is about to transition to being susceptible again.."
+    }
+]
