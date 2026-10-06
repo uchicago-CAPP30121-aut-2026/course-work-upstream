@@ -193,7 +193,7 @@ def check_city(actual, expected):
     """
     # Check the type
     if not isinstance(actual, list):
-        return TYPE_MSG.format("city", "list", type(actual))
+        return TYPE_MSG.format("city", type(actual), "list")
 
     # Check length
     if len(actual) != len(expected):
@@ -227,7 +227,7 @@ def check_scalar_result(tag, actual, expected):
     """
     # Check the type
     if not isinstance(actual, type(expected)):
-        return TYPE_MSG.format(tag, type(expected), type(actual))
+        return TYPE_MSG.format(tag, type(actual), type(expected))
 
     # Check the value.
     if actual != expected:
