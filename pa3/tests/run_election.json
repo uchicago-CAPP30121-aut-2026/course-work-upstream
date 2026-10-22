@@ -1,0 +1,232 @@
+[
+    {
+        "ballot_filename": "ballot_files/ballots_0.txt",
+        "viable_candidates": [
+            "red",
+            "yellow",
+            "blue"
+        ],
+        "expected": [
+            {
+                "round_num": 1,
+                "vote_tally": {
+                    "red": 2,
+                    "blue": 1,
+                    "yellow": 3
+                },
+                "num_exhausted": 0,
+                "viable_candidates": [
+                    "red",
+                    "yellow",
+                    "blue"
+                ],
+                "drop": "blue"
+            },
+            {
+                "round_num": 2,
+                "vote_tally": {
+                    "red": 2,
+                    "yellow": 4
+                },
+                "num_exhausted": 0,
+                "viable_candidates": [
+                    "red",
+                    "yellow"
+                ],
+                "winner": "yellow"
+            }
+        ]
+    },
+    {
+        "ballot_filename": "ballot_files/ballots_1.txt",
+        "viable_candidates": [
+            "red",
+            "yellow",
+            "blue"
+        ],
+        "expected": [
+            {
+                "round_num": 1,
+                "vote_tally": {
+                    "red": 2,
+                    "blue": 1,
+                    "yellow": 3
+                },
+                "num_exhausted": 0,
+                "viable_candidates": [
+                    "red",
+                    "yellow",
+                    "blue"
+                ],
+                "drop": "blue"
+            },
+            {
+                "round_num": 2,
+                "vote_tally": {
+                    "red": 2,
+                    "yellow": 3
+                },
+                "num_exhausted": 1,
+                "viable_candidates": [
+                    "red",
+                    "yellow"
+                ],
+                "winner": "yellow"
+            }
+        ]
+    },
+    {
+        "ballot_filename": "ballot_files/ballots_1.txt",
+        "viable_candidates": [
+            "black",
+            "brown",
+            "purple"
+        ],
+        "expected": [
+            {
+                "round_num": 1,
+                "vote_tally": {},
+                "num_exhausted": 6,
+                "viable_candidates": [
+                    "black",
+                    "brown",
+                    "purple"
+                ]
+            }
+        ]
+    },
+    {
+        "ballot_filename": "ballot_files/ballots_2.txt",
+        "viable_candidates": [
+            "red",
+            "blue",
+            "yellow",
+            "green"
+        ],
+        "expected": [
+            {
+                "round_num": 1,
+                "vote_tally": {
+                    "red": 2,
+                    "blue": 1,
+                    "yellow": 2,
+                    "green": 1
+                },
+                "num_exhausted": 0,
+                "viable_candidates": [
+                    "red",
+                    "blue",
+                    "yellow",
+                    "green"
+                ],
+                "drop": "green"
+            },
+            {
+                "round_num": 2,
+                "vote_tally": {
+                    "red": 3,
+                    "blue": 1,
+                    "yellow": 2
+                },
+                "num_exhausted": 0,
+                "viable_candidates": [
+                    "red",
+                    "blue",
+                    "yellow"
+                ],
+                "drop": "blue"
+            },
+            {
+                "round_num": 3,
+                "vote_tally": {
+                    "red": 3,
+                    "yellow": 3
+                },
+                "num_exhausted": 0,
+                "viable_candidates": [
+                    "red",
+                    "yellow"
+                ],
+                "drop": "yellow"
+            },
+            {
+                "round_num": 4,
+                "vote_tally": {
+                    "red": 5
+                },
+                "num_exhausted": 1,
+                "viable_candidates": [
+                    "red"
+                ],
+                "winner": "red"
+            }
+        ]
+    },
+    {
+        "ballot_filename": "ballot_files/ballots_2.txt",
+        "viable_candidates": [
+            "red",
+            "green",
+            "yellow",
+            "blue"
+        ],
+        "expected": [
+            {
+                "round_num": 1,
+                "vote_tally": {
+                    "red": 2,
+                    "blue": 1,
+                    "yellow": 2,
+                    "green": 1
+                },
+                "num_exhausted": 0,
+                "viable_candidates": [
+                    "red",
+                    "green",
+                    "yellow",
+                    "blue"
+                ],
+                "drop": "blue"
+            },
+            {
+                "round_num": 2,
+                "vote_tally": {
+                    "red": 2,
+                    "yellow": 3,
+                    "green": 1
+                },
+                "num_exhausted": 0,
+                "viable_candidates": [
+                    "red",
+                    "green",
+                    "yellow"
+                ],
+                "drop": "green"
+            },
+            {
+                "round_num": 3,
+                "vote_tally": {
+                    "red": 3,
+                    "yellow": 3
+                },
+                "num_exhausted": 0,
+                "viable_candidates": [
+                    "red",
+                    "yellow"
+                ],
+                "drop": "yellow"
+            },
+            {
+                "round_num": 4,
+                "vote_tally": {
+                    "red": 5
+                },
+                "num_exhausted": 1,
+                "viable_candidates": [
+                    "red"
+                ],
+                "winner": "red"
+            }
+        ]
+    }
+]

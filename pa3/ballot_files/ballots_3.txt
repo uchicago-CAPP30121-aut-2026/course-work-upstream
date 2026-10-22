@@ -1,0 +1,5 @@
+orange
+yellow
+light blue
+pink
+maroon

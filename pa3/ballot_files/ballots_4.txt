@@ -1,0 +1,10 @@
+red,blue,pink
+blue,yellow
+yellow,red
+yellow,blue,red
+red,blue,yellow
+green,red,blue
+purple,pink,yellow
+green,pink,yellow
+pink
+
