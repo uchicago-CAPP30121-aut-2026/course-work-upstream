@@ -284,9 +284,8 @@ def test_mk_round_results_str(test_params):
     try:
         actual = ranked_choice_student.mk_round_results_str(round_results)
     except Exception as e:
-        print("here #2:", e)
         err_msg = EXCEPTION_MSG.format(type(e).__name__, e)
-        return err_msg
+        pytest.fail(err_msg)
 
     err_msg = check_mk_round_results_str(actual, params["expected"])
     if err_msg:
@@ -294,7 +293,7 @@ def test_mk_round_results_str(test_params):
         pytest.fail(err_msg + rmsg)
 
     if round_results != round_results_copy:
-        return "The round_results input was modified, which is not allowed.\n"
+        pytest.fail("The round_results input was modified, which is not allowed.\n")
 
     # Test passed
     return None
