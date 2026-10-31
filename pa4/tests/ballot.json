@@ -1,0 +1,44 @@
+[
+    {
+        "purpose": "First viable candidate appears in the middle of the list of ranked choice votes.",
+        "ranked_choices": [
+            "red",
+            "purple",
+            "blue",
+            "light blue",
+            "pink",
+            "yellow",
+            "green"
+        ],
+        "cands_in_order": [
+            "maroon",
+            "black",
+            "yellow",
+            "purple",
+            "green"
+        ],
+        "expected_first_viable": "purple",
+        "expected_str": "red,purple,blue,light blue,pink,yellow,green"
+    },
+    {
+        "purpose": "Ballot does not contain any viable candidates",
+        "ranked_choices": [
+            "red",
+            "purple",
+            "blue",
+            "light blue",
+            "pink",
+            "yellow",
+            "green"
+        ],
+        "cands_in_order": [
+            "gray",
+            "black",
+            "white",
+            "",
+            ""
+        ],
+        "expected_first_viable": null,
+        "expected_str": "red,purple,blue,light blue,pink,yellow,green"
+    }
+]

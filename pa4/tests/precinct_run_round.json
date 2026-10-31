@@ -1,0 +1,22 @@
+[
+    {
+        "pid": "bushwick_0",
+        "ballot_filename": "sample_elections/nyc1/bushwick_0",
+        "cands_in_order": [
+            "red",
+            "blue",
+            "green",
+            "yellow"
+        ],
+        "expected_run_round": [
+            {
+                "red": 2,
+                "blue": 1,
+                "green": 1,
+                "yellow": 2
+            },
+            0
+        ],
+        "expected_str": "Precinct bushwick_0:\n  red,blue,yellow\n  blue,yellow\n  green,yellow,red\n  yellow,blue,red\n  red,blue,yellow\n  yellow,blue\n"
+    }
+]

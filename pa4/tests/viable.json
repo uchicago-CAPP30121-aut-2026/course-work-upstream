@@ -1,0 +1,63 @@
+[
+    {
+        "cands_in_order": [
+            "red",
+            "blue",
+            "green",
+            "yellow"
+        ],
+        "cand_args": [
+            "red",
+            "yellow",
+            "chartreuse"
+        ],
+        "drop_cand": "yellow",
+        "expected": {
+            "num_viable": 4,
+            "in_order": [
+                "red",
+                "blue",
+                "green",
+                "yellow"
+            ],
+            "str": "red,blue,green,yellow",
+            "drop": [
+                "red",
+                "blue",
+                "green"
+            ],
+            "drop_exception_expected": false,
+            "is_viable_red": true,
+            "is_viable_yellow": true,
+            "is_viable_chartreuse": false
+        }
+    },
+    {
+        "cands_in_order": [
+            "red",
+            "blue",
+            "green",
+            "yellow"
+        ],
+        "cand_args": [
+            "red",
+            "yellow",
+            "chartreuse"
+        ],
+        "drop_cand": "purple",
+        "expected": {
+            "num_viable": 4,
+            "in_order": [
+                "red",
+                "blue",
+                "green",
+                "yellow"
+            ],
+            "str": "red,blue,green,yellow",
+            "drop_exception_expected": true,
+            "is_viable_red": true,
+            "is_viable_yellow": true,
+            "is_viable_chartreuse": false
+        }
+    }
+]

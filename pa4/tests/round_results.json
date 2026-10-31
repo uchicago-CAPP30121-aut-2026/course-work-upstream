@@ -1,0 +1,134 @@
+[
+    {
+        "city_name": "nyc",
+        "city_file": "elections/nyc1",
+        "round_num": 1,
+        "cands_in_order": [
+            "red",
+            "green",
+            "blue"
+        ],
+        "per_precinct_results": {
+            "bushwick_0": [
+                {
+                    "red": 2,
+                    "blue": 3,
+                    "green": 1
+                },
+                0
+            ],
+            "cobble_hill_0": [
+                {
+                    "red": 2,
+                    "blue": 3,
+                    "green": 1
+                },
+                0
+            ],
+            "inwood_1": [
+                {
+                    "red": 3,
+                    "blue": 2,
+                    "green": 1
+                },
+                0
+            ],
+            "long_island_city_27": [
+                {
+                    "red": 3,
+                    "blue": 2,
+                    "green": 2
+                },
+                2
+            ]
+        },
+        "expected": {
+            "drop": "green",
+            "winner": null,
+            "all_exhausted": false,
+            "audit_str_long": "=============== Round 1 ===============\nPrecinct bushwick_0:\n  Vote Tally:\n    red: 2\n    green: 1\n    blue: 3\n\n  Number of exhausted ballots: 0\n\nPrecinct cobble_hill_0:\n  Vote Tally:\n    red: 2\n    green: 1\n    blue: 3\n\n  Number of exhausted ballots: 0\n\nPrecinct inwood_1:\n  Vote Tally:\n    red: 3\n    green: 1\n    blue: 2\n\n  Number of exhausted ballots: 0\n\nPrecinct long_island_city_27:\n  Vote Tally:\n    red: 3\n    green: 2\n    blue: 2\n\n  Number of exhausted ballots: 2\n\nOverall:\n  Vote Tally:\n    red: 10\n    green: 5\t(drop)\n    blue: 10\n\n  Number of Exhausted Ballots: 2\n\n",
+            "audit_str_short": "=============== Round 1 ===============\nOverall:\n  Vote Tally:\n    red: 10\n    green: 5\t(drop)\n    blue: 10\n\n  Number of Exhausted Ballots: 2\n\n"
+        }
+    },
+    {
+        "city_name": "nyc",
+        "city_file": "elections/nyc1",
+        "round_num": 2,
+        "cands_in_order": [
+            "red",
+            "blue"
+        ],
+        "per_precinct_results": {
+            "bushwick_0": [
+                {
+                    "red": 3,
+                    "blue": 3
+                },
+                0
+            ],
+            "cobble_hill_0": [
+                {
+                    "red": 3,
+                    "blue": 3
+                },
+                0
+            ],
+            "inwood_1": [
+                {
+                    "red": 4,
+                    "blue": 2
+                },
+                0
+            ],
+            "long_island_city_27": [
+                {
+                    "red": 4,
+                    "blue": 2
+                },
+                3
+            ]
+        },
+        "expected": {
+            "drop": null,
+            "winner": "red",
+            "all_exhausted": false,
+            "audit_str_long": "=============== Round 2 ===============\nPrecinct bushwick_0:\n  Vote Tally:\n    red: 3\n    blue: 3\n\n  Number of exhausted ballots: 0\n\nPrecinct cobble_hill_0:\n  Vote Tally:\n    red: 3\n    blue: 3\n\n  Number of exhausted ballots: 0\n\nPrecinct inwood_1:\n  Vote Tally:\n    red: 4\n    blue: 2\n\n  Number of exhausted ballots: 0\n\nPrecinct long_island_city_27:\n  Vote Tally:\n    red: 4\n    blue: 2\n\n  Number of exhausted ballots: 3\n\nOverall:\n  Vote Tally:\n    red: 14\t(winner)\n    blue: 10\n\n  Number of Exhausted Ballots: 3\n\n",
+            "audit_str_short": "=============== Round 2 ===============\nOverall:\n  Vote Tally:\n    red: 14\t(winner)\n    blue: 10\n\n  Number of Exhausted Ballots: 3\n\n"
+        }
+    },
+    {
+        "city_name": "nyc",
+        "city_file": "elections/nyc1",
+        "round_num": 1,
+        "cands_in_order": [
+            "x",
+            "y",
+            "z"
+        ],
+        "per_precinct_results": {
+            "bushwick_0": [
+                {},
+                6
+            ],
+            "cobble_hill_0": [
+                {},
+                6
+            ],
+            "inwood_1": [
+                {},
+                6
+            ],
+            "long_island_city_27": [
+                {},
+                9
+            ]
+        },
+        "expected": {
+            "drop": null,
+            "winner": null,
+            "all_exhausted": true,
+            "audit_str_long": "=============== Round 1 ===============\nPrecinct bushwick_0:\n  Vote Tally:\n    x: 0\n    y: 0\n    z: 0\n\n  Number of exhausted ballots: 6\n\nPrecinct cobble_hill_0:\n  Vote Tally:\n    x: 0\n    y: 0\n    z: 0\n\n  Number of exhausted ballots: 6\n\nPrecinct inwood_1:\n  Vote Tally:\n    x: 0\n    y: 0\n    z: 0\n\n  Number of exhausted ballots: 6\n\nPrecinct long_island_city_27:\n  Vote Tally:\n    x: 0\n    y: 0\n    z: 0\n\n  Number of exhausted ballots: 9\n\nOverall:\n  Vote Tally:\n    x: 0\n    y: 0\n    z: 0\n\n  Number of Exhausted Ballots: 27\n\n",
+            "audit_str_short": "=============== Round 1 ===============\nOverall:\n  Vote Tally:\n    x: 0\n    y: 0\n    z: 0\n\n  Number of Exhausted Ballots: 27\n\n"
+        }
+    }
+]
