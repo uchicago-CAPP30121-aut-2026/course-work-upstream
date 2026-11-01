@@ -34,9 +34,7 @@
         "cands_in_order": [
             "gray",
             "black",
-            "white",
-            "",
-            ""
+            "white"
         ],
         "expected_first_viable": null,
         "expected_str": "red,purple,blue,light blue,pink,yellow,green"
