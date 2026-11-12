@@ -100,10 +100,10 @@ class Rectangle:
         x, y = self.origin
         width, height = self.size
         return (
-            f"RECTANGLE origin: ({x:.4f} {y:.4f})\n"
-            f"          width & height: ({width:.4f} {height:.4f})\n"
-            f"          label: {self.label}\n"
-            f"          color code: {self.color_code}"
+            f"RECTANGLE origin: ({x:.4f}, {y:.4f})\n"
+            f"          width & height: ({width:.4f}, {height:.4f})\n"
+            f"          label: {repr(self.label)}\n"
+            f"          color code: {repr(self.color_code)}"
         )
 
     def __repr__(self):
