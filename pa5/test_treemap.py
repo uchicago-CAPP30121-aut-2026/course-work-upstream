@@ -244,7 +244,7 @@ def test_compute_treemap_rectangles(test_params):
         "    import treemap, atus\n"
         f"    part_tree = {load_str}"
         "    treemap.compute_weights(part_tree)\n"
-        "    rects = treemap.compute_treemap_rectangles(part_tree)\n\n"
+        f"    rects = treemap.compute_treemap_rectangles(part_tree, {params['height']}, {params['width']})\n\n"
     )
 
     # set the weights first!
