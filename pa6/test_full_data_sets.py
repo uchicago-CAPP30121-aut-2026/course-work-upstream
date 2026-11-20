@@ -15,7 +15,16 @@ from asqp import (
     is_seasonal,
 )
 
-from test_asqp import task1a_helper
+from test_asqp import (
+    task1a_helper,
+    task1b_helper,
+    task1c_helper,
+    task1d_helper,
+    task2_helper,
+    task3a_helper,
+    task3b_helper,
+    task3c_helper,
+)
 
 DATA_DIR = "full_data_sets/"
 TEST_DIR = "full_data_sets/"
@@ -23,51 +32,19 @@ TEST_DIR = "full_data_sets/"
 
 def test_task1a():
     file_name = "full_data_sets/asqp.asc"
-    _, arrival_delay, _ = get_task1_data(file_name)
-    if arrival_delay is None:
-        assert False, (
-            f"Error: Could not load {file_name}.\nAre you in the right directory?"
-        )
-
-    actual = average_delay(arrival_delay)
     expected = 63.77200407619861
-    assert np.isclose(actual, expected), (
-        "Value returned by average_delay not as expected"
-    )
+    task1a_helper(file_name, expected)
 
 
 def test_task1b():
     file_name = "full_data_sets/asqp.asc"
-
-    _, arrival_delay, cancellation_code = get_task1_data(file_name)
-    if arrival_delay is None:
-        assert False, (
-            f"Error: Could not load {file_name}.\nAre you in the right directory?"
-        )
-    actual_delays, actual_cancels = delay_and_cancel_fractions(
-        arrival_delay, cancellation_code
-    )
-
     expected_delays = 0.1873460363600532
     expected_cancels = 0.012289377740552792
-    assert np.isclose(actual_delays, expected_delays), (
-        "Value returned by delay_and_cancel_fractions not as expected"
-    )
-    assert np.isclose(actual_cancels, expected_cancels), (
-        "Value returned by delay_and_cancel_fractions not as expected"
-    )
+    task1b_helper(file_name, expected_delays, expected_cancels)
 
 
 def test_task1c():
     file_name = "full_data_sets/asqp.asc"
-
-    carrier, _, cancellation_code = get_task1_data(file_name)
-    if carrier is None:
-        assert False, (
-            f"Error: Could not load {file_name}.\nAre you in the right directory?"
-        )
-
-    actual_cancellations, actual_worst = per_carrier_cancels(carrier, cancellation_code)
     expected_cancellations = {
         "DL": 412,
         "AA": 4356,
@@ -81,53 +58,17 @@ def test_task1c():
         "WN": 931,
     }
     expected_worst = "AA"
-
-    assert actual_cancellations == expected_cancellations, (
-        "Value returned by per_carrier_cancels not as expected"
-    )
-    assert actual_worst == expected_worst, (
-        "Value returned by per_carrier_cancels not as expected"
-    )
+    task1c_helper(file_name, expected_cancellations, expected_worst)
 
 
 def test_task1d():
     file_name = "full_data_sets/asqp.asc"
-    carrier, arrival_delay, _ = get_task1_data(file_name)
-    if carrier is None:
-        assert False, (
-            f"Error: Could not load {file_name}.\nAre you in the right directory?"
-        )
-    actual_worst = set(underperforming_carriers(carrier, arrival_delay))
     expected_worst = set(["DL", "UA", "B6", "F9", "G4", "NK"])
-
-    assert actual_worst == expected_worst, (
-        "Value returned by underperforming_carriers not as expected"
-    )
-
-
-def task2_helper(actual_filename, expected_filename):
-
-    actual = read_and_process_npy(actual_filename)
-    expected = np.load(expected_filename)
-
-    assert np.array_equal(actual, expected), (
-        "Array returned by read_and_process_npy not as expected"
-    )
+    task1d_helper(file_name, expected_worst)
 
 
 def test_task2_full():
     task2_helper(DATA_DIR + "delays.npy", TEST_DIR + "task3_delays.npy")
-
-
-def task3a_helper(actual_filename, expected_filename, w):
-
-    ts = np.load(actual_filename)
-    actual = remove_irregularities(ts, w)
-    expected = np.load(expected_filename)
-
-    assert np.isclose(actual, expected).all(), (
-        "Array returned by remove_irregularities not as expected"
-    )
 
 
 def test_task3a_full_0():
@@ -154,17 +95,6 @@ def test_task3a_full_2():
     task3a_helper(actual_filename, expected_filename, w)
 
 
-def task3b_helper(actual_filename, expected_filename, w):
-
-    ts = np.load(actual_filename)
-    actual = remove_trend(ts, w)
-    expected = np.load(expected_filename)
-
-    assert np.isclose(actual, expected).all(), (
-        "Array returned by remove_irregularities not as expected"
-    )
-
-
 def test_task3b_full_0():
 
     w = 1
@@ -187,20 +117,6 @@ def test_task3b_full_2():
     actual_filename = DATA_DIR + "task3_delays.npy"
     expected_filename = DATA_DIR + "task4b_delays_w" + str(w) + ".npy"
     task3b_helper(actual_filename, expected_filename, w)
-
-
-def task3c_helper(actual_filename, expected_filename, w, expected_month):
-
-    ts = np.load(actual_filename)
-    actual_buckets, actual_month = is_seasonal(ts, w)
-    expected_buckets = np.load(expected_filename)
-
-    assert np.isclose(actual_buckets, expected_buckets).all(), (
-        "Array returned by is_seasonal not as expected"
-    )
-    assert actual_month == expected_month, (
-        "Month returned by is_seasonal not as expected"
-    )
 
 
 def test_task3c_0():
